@@ -1,0 +1,43 @@
+<html>
+    <head>
+	<title>Student Login Page</title>
+<link rel="stylesheet" href="mystyle.css">
+<style type="text/css">
+
+body {
+	
+}
+
+</style>
+        <title>Login page</title>
+    </head>
+	<div class="header">
+<img src="login.jpg" alt="logo" />
+    <body>
+        <h1>Student Login Page</h1>
+        <form name="login">
+		    <h1>Please enter your University Email and Password</h1>
+            Email:  <input type="text" name="userid"/>
+            <br><br>Password:<input type="password" name="pswrd"/>
+            <br><br><input type="button" onclick="check(this.form)" value="Login"/>
+            <input type="reset" value="Cancel"/>
+        </form>
+        <script language="javascript">
+            function check(form) { 
+                if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd") {
+                    window.open('target.html')
+                }
+                else {
+                    alert("Error Password or Username")
+                }
+            }
+        </script>
+		<form action="welcome.html.">
+    <input type="submit" value="Back to Home">
+</form>
+    </body>
+	<br>
+	<address>
+		Developed By:<br> Saurav Upadhyay
+	</address>
+</html>
