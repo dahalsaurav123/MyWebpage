@@ -1,57 +1,57 @@
 
 function validate()
 { 
-  if( document.StudentRegistration.studentid.value == "" )
+  if( document.welcome.studentid.value == "" )
    {
      alert( "Please provide your University assigned ID" );
-     document.StudentRegistration.studentid.focus() ;
+     document.welcome.studentid.focus() ;
      return false;
    }
-   if( document.StudentRegistration.studentfirstname.value == "" )
+   if( document.welcome.studentfirstname.value == "" )
    {
      alert( "Please provide your  First Name!" );
-     document.StudentRegistration.studentfirstname.focus() ;
+     document.welcome.studentfirstname.focus() ;
      return false;
    }
   
-   if( document.StudentRegistration.studentlastname.value == "" )
+   if( document.welcome.studentlastname.value == "" )
    {
      alert( "Please provide your  Last Name!" );
-     document.StudentRegistration.studentlastname.focus() ;
+     document.welcome.studentlastname.focus() ;
      return false;
    }
-   if( document.StudentRegistration.dob.value == "" )
+   if( document.welcome.dob.value == "" )
    {
      alert( "Please provide your DOB!" );
-     document.StudentRegistration.dob.focus() ;
+     document.welcome.dob.focus() ;
      return false;
    }
-     if ( ( StudentRegistration.sex[0].checked == false ) && ( StudentRegistration.sex[1].checked == false ) )
+     if ( ( welcome.sex[0].checked == false ) && ( welcome.sex[1].checked == false ) )
    {
    alert ( "Please choose your Gender: Male or Female" );
    return false;
    } 
-   if( document.StudentRegistration.paddress.value == "" )
+   if( document.welcome.paddress.value == "" )
    {
      alert( "Please provide a Valid Address!" );
-     document.StudentRegistration.paddress.focus() ;
+     document.welcome.paddress.focus() ;
      return false;
    }
    
    
-   if( document.StudentRegistration.City.value == "-1" )
+   if( document.welcome.City.value == "-1" )
    {
      alert( "Please provide your City!" );
-     document.StudentRegistration.City.focus() ;
+     document.welcome.City.focus() ;
      return false;
    } 
-if( document.StudentRegistration.State.value == "-1" )
+if( document.welcome.State.value == "-1" )
    {
      alert( "Please choose your State!" );
      
      return false;
    }   
-   if( document.StudentRegistration.Major.value == "-1" )
+   if( document.welcome.Major.value == "-1" )
    {
      alert( "Please Choose your Major Field of Study" );
     
@@ -59,31 +59,31 @@ if( document.StudentRegistration.State.value == "-1" )
    }   
       
    
-   if( document.StudentRegistration.zipcode.value == "" ||
-           isNaN( document.StudentRegistration.zipcode.value) ||
-           document.StudentRegistration.zipcode.value.length != 6 )
+   if( document.welcome.zipcode.value == "" ||
+           isNaN( document.welcome.zipcode.value) ||
+           document.welcome.zipcode.value.length != 6 )
    {
      alert( "Please provide a zipcode in the format ######." );
-     document.StudentRegistration.zipcode.focus() ;
+     document.welcome.zipcode.focus() ;
      return false;
    }
- var email = document.StudentRegistration.emailid.value;
+ var email = document.welcome.emailid.value;
   atpos = email.indexOf("@");
   dotpos = email.lastIndexOf(".");
  if (email == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
  {
      alert("Please enter correct university email ID")
-     document.StudentRegistration.emailid.focus() ;
+     document.welcome.emailid.focus() ;
      return false;
  }
   
 
-  if( document.StudentRegistration.phonenumber.value == "" ||
-           isNaN( document.StudentRegistration.phonenumber.value) ||
-           document.StudentRegistration.phonenumber.value.length != 10 )
+  if( document.welcome.phonenumber.value == "" ||
+           isNaN( document.welcome.phonenumber.value) ||
+           document.welcome.phonenumber.value.length != 10 )
    {
      alert( "Please provide a phone number in a valid number format" );
-     document.StudentRegistration.phonenumber.focus() ;
+     document.welcome.phonenumber.focus() ;
      return false;
    }
    return( true );
