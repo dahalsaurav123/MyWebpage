@@ -1,12 +1,12 @@
 <html>
-<head>
+<head lang="en">
+    <meta charset="UTF-8">
 
 <title>Student Registration Page</title>
 <link rel="stylesheet" href="mystyle.css">
-<style type="text/css">
-body {
-	
-}
+ <link href="lib/bootstrap.min.css" rel="stylesheet">
+<style type="mystyle.css">
+
 </style>
 </head>
 <div class="header">
@@ -23,7 +23,7 @@ body {
 			<li><a href="contact.html">Contact us</a><br> <br>
 			<li><a href="registrar.html">Registrar Login</a></b>
 			<br>
-		</ul>
+		</ul> 
 
 
 		<h1>Welcome Student</h1>
@@ -44,52 +44,90 @@ body {
 					<table cellpadding="2" width="20%" bgcolor="99FFFF" align="center"
 						cellspacing="2">
 
-						<tr>
-							<td colspan=2>
-								<center>
-									<font size=4><b> Student Registration Form</b></font>
-								</center>
-							</td>
-						</tr>
-						<tr>
-							<td>Student ID</td>
-							<td><input type=text name=textnames id="textname" size="30"></td>
-						</tr>
-						<tr>
-							<td>First Name</td>
-							<td><input type=text name=textnames id="textname" size="30"></td>
-						</tr>
-						<tr>
-							<td>Last Name</td>
-							<td><input type=text name=textnames id="textname" size="30"></td>
-						</tr>
-						<tr>
-						<tr>
-							<td>DOB</td>
-							<td><input type="text" name="dob" id="dob" size="30"></td>
-						</tr>
+					<div class="row" style="padding-left: 300px;padding-right: 300px;">
+    <br>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Student Registration Form</h3>
+        </div>	
+							<div class="panel-body">
+							
+            <div class="row">
+                <div class="col-lg-2">
+                    StudentID:
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Enter Student ID" class="form-control">
+                </div>
+            </div>
+			<br>
+			<div class="row">
+			 <div class="col-lg-2">
+                    FirstName:
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Enter First Name" class="form-control">
+                </div>
+            </div>
+			<br>
+			<div class="row">
+			 <div class="col-lg-2">
+                    LastName:
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Enter last Name" class="form-control">
+                </div>
+            </div>
+            <br>
+			<div class="row">
+			<div class="col-lg-2">
+                    DOB:
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Date Of Birth" class="form-control">
+                </div>
+            </div>
+            <br>
+			<div class="row">
+                <div class="col-lg-2">
+                    Sex :
+                </div>
+                <div class="col-md-1">
+                    <select class="form-control">
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <br>
 
-						<td>Sex</td>
-						<td><input type="radio" name="sex" value="male" size="10">Male
-							<input type="radio" name="sex" value="Female" size="10">Female</td>
-						</tr>
+            <div class="row">
+                <div class="col-lg-2">
+                    Address :
+                </div>
+                <div class="col-lg-6 controls">
+                    <input type="text" placeholder="Enter address" class="form-control">
+                </div>
+                <label class="control-label"></label>
+            </div>
+            <br>
 
-						<tr>
-							<td>Address</td>
-							<td><input type="text" name="address" id="address" size="30"></td>
-						</tr>
-
-						<tr>
-							<td>City</td>
-							<td><input type="text" name="city" id="city" size="30"></td>
-						</tr>
-
-
-
-						<tr>
-							<td>State</td>
-							<td><select name="State">
-									<option value="-1" selected>select..</option>
+            <div class="row">
+                <div class="col-lg-2">
+                    City :
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Enter City" class="form-control">
+                </div>
+            </div>
+            <br>
+			<div class="row">
+                <div class="col-lg-2">
+                    State :
+                </div>
+                <div class="col-lg-6">
+                    <select class="form-control">
+                        <option value="-1" selected>select..</option>
 									<option value="New York">NY</option>
 									<option value="Pennsylvania">PA</option>
 									<option value="New Jersey">NJ</option>
@@ -109,49 +147,81 @@ body {
 									<option value="Texas">TX</option>
 									<option value="Nebraska">NA</option>
 									<option value="Oregon">OR</option>
-							</select></td>
-						</tr>
+                    </select>
+                </div>
+            </div>
+            <br>
+	
+						  <div class="row">
+                <div class="col-lg-2">
+                    Zip Code :
+                </div>
+                <div class="col-lg-6">
+                    <input type="number" placeholder="Enter zip Code" class="form-control">
+                </div>
+            </div>
+            <br>
+					  <div class="row">
+                <div class="col-lg-2">
+                    Phone Number :
+                </div>
+                <div class="col-lg-6">
+                    <input type="number" placeholder="Enter Phone Number" class="form-control">
+                </div>
+            </div>
+            <br>
+				
+			<div class="row">
+                <div class="col-lg-2">
+                    Major :
+                </div>
+                <div class="col-lg-6 form-group">
+                    Computer Science<input type="radio" value="CS">
+                    Business Management<input type="radio" value="BM">
+					Accounting<input type="radio" value="ACC">
+					Criminal Justice<input type="radio" value="CJ">
+					Computer Information System<input type="radio" value="CIS">
+					Journal Science<input type="radio" value="JS">
+					Management Information System<input type="radio" value="MIS">
+                </div>
+            </div>
+            <br>
+<div class="row">
+                <div class="col-lg-2">
+                    Semester:
+                </div>
+                <div class="col-lg-6">
+                    <input type="checkbox" value="Fall">Fall
+                    <input type="checkbox" value="LateFall">LateFall
+                    <input type="checkbox" value="Spring">Spring
+                    <input type="checkbox" value="Late Spring">Late Spring
+                    <input type="checkbox" value="Summer">Summer
+                </div>
+            </div>
+            <br>
+			
+          	
 
-						<tr>
-							<td>Major</td>
-							<td><select name="Major">
-									<option value="-1" selected>select..</option>
-									<option value="BCS">Computer Science</option>
-									<option value="BCIS">Computer Information System</option>
-									<option value="MIS">Management information System</option>
-									<option value="BBA">Business Management</option>
-									<option value="BSC">Physics</option>
-									<option value="BJS">Journal Science</option>
-									<option value="BPM">project Management</option>
-							</select></td>
-						</tr>
+			<div class="row">
+                <div class="col-lg-8">
+
+                </div>
+                <div class="col-lg-2">
+                    <button class="btn btn-danger">Reset</button>
+
+                </div>
+				<div class="row">
+                <div class="col-lg-2">
+                    <button class="btn btn-success">RegisterStudent</button>
+                </div>
+            </div>
+            <br>
 
 
 
 
-						<tr>
-							<td>Zip Code</td>
-							<td><input type="text" name="zipcode" id="zipcode" size="30"></td>
-
-						</tr>
-						<tr>
-							<td>University Email Id</td>
-							<td><input type="text" name="universityemailid"
-								id="universityemailid" size="30"></td>
-						</tr>
-
-
-
-						<tr>
-							<td>Phone Number</td>
-							<td><input type="text" name="phonenumber" id="phonenumber"
-								size="30"></td>
-						</tr>
-						<tr>
-							<td><input type="reset"></td>
-							<td colspan="2"><input type="submit" value="Submit Form" /></td>
-						</tr>
-					</table>
+						
+						
 				</form>
 				<br>
 				<address>Developed By: Saurav Upadhyay</address>
